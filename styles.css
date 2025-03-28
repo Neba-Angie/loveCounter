@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("./hero-pic.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+.desc {
+  font-family: "Great Vibes", cursive;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.timer-container {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+}
+.title {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: heartbeat 1.5s infinite;
+}
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+.timer {
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.time-unit {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  min-width: 120px;
+  font-size: 1.5rem;
+}
+.quote {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+.heart {
+    position: absolute;
+    top: -50px;
+    font-size: 30px;
+    animation: fall 5s infinite;
+}
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
